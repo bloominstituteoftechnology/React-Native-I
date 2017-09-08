@@ -2,9 +2,15 @@ import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
 export default class App extends React.Component {
+  constructor() { // not using right now, but just like React
+    super();
+    this.state = {
+
+    };
+  }
   render() {
     console.log('Well, hello there!')
-    return (
+    return ( // the JSX is different than in React
       <View style={styles.container}>
         {/* <Text>Open up App.js to start working on your app!</Text>
         <Text>This is totally cool!</Text> */}
@@ -42,7 +48,7 @@ const styles = StyleSheet.create({
     marginBottom: 10,
     backgroundColor: 'salmon',
     // alignItems: 'center',
-    justifyContent: 'center',
+    justifyContent: 'center', // <~~~~ that's how.
   },
   text1: {
     // alignSelf: 'center',

@@ -29,6 +29,23 @@ export default class App extends React.Component {
             Third
           </Text>
         </View>
+        <Text>Open up App.js to start working on your app!</Text>
+        <Text>This is totally cool!</Text>
+        <View style={styles.child}>
+          <Text style={styles.text1}>
+            First
+          </Text>
+        </View>
+        <View style={styles.child}>
+          <Text style={styles.text2}>
+            Second
+          </Text>
+        </View>
+        <View style={styles.child}>
+          <Text style={styles.text3}>
+            Third
+          </Text>
+        </View>
       </View>
     );
   }

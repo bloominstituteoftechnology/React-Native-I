@@ -19,24 +19,24 @@ export default class App extends React.Component {
           />
         </View>
         <View style={styles.child3}>
-          <View style={styles.child3box1}>
+          <View style={styles.child3Box1}>
             <Text style={styles.text1}>LIKE</Text>
           </View>
-          <View style={styles.child3box2}>
+          <View style={styles.child3Box2}>
             <Text style={styles.text1}>SHARE</Text>
           </View>
-          <View style={styles.child3box3}>
+          <View style={styles.child3Box3}>
             <Text style={styles.text1}>COMMENT</Text>
           </View>
         </View>
         <View style={styles.child4}>
-          <View style={styles.child4box1}>
+          <View style={[styles.child4Box1, styles.marginsLR]}>
             < Text style={styles.text2}>USER A</Text>
           </View>
-          <View style={styles.child4box2}>
+          <View style={[styles.child4Box2, styles.marginsLR]}>
             <Text style={styles.text2}>USER B</Text>
           </View>
-          <View style={styles.child4box3}>
+          <View style={[styles.child4Box3, styles.marginsLR]}>
             <Text style={styles.text2}>USER C</Text>
           </View>
         </View>
@@ -85,16 +85,19 @@ const styles = StyleSheet.create({
     // alignItems: 'center',
     marginTop: 20,
   },
+
   child1: {
     flex: 1,
     borderWidth: 1,
     borderColor: 'red',
   },
+
   child2: {
-    flex: 1,
+    flex: 4,
     borderWidth: 1,
     borderColor: 'green',
   },
+
   child3: {
     flex: 1,
     // height: 10,
@@ -103,16 +106,17 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
   },
-  child3box1: {
+  child3Box1: {
     flex: 1,
     borderWidth: 1,
     marginLeft: 50,
+    backgroundColor: 'rgb(138, 180, 240)',
   },
-  child3box2: {
+  child3Box2: {
     flex: 1,
     borderWidth: 1,
   },
-  child3box3: {
+  child3Box3: {
     flex: 1,
     borderWidth: 1,
     marginRight: 50,
@@ -122,23 +126,28 @@ const styles = StyleSheet.create({
     borderColor: 'yellow',
     fontSize: 10,
   },
+
   child4: {
     flex: 1,
-    height: 25,
-    width: 300,
+    // height: 25,
+    // width: 300,
     borderWidth: 1,
     borderColor: 'black',
     justifyContent: 'center',
   },
-  child4box1: {
+  marginsLR: {
+    marginLeft: 10,
+    marginRight: 10,
+  },
+  child4Box1: {
     flex: 1,
     borderWidth: 1,
   },
-  child4box2: {
+  child4Box2: {
     flex: 1,
     borderWidth: 1,
   },
-  child4box3: {
+  child4Box3: {
     flex: 1,
     borderWidth: 1,
   },

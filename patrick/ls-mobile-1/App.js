@@ -12,8 +12,8 @@ export default class App extends React.Component {
     console.log('Well, hello there!')
     return ( // the JSX is different than in React
       <View style={styles.container}>
-        {/* <Text>Open up App.js to start working on your app!</Text>
-        <Text>This is totally cool!</Text> */}
+        <Text>Open up App.js to start working on your app!</Text>
+        <Text>This is totally cool!</Text>
         <View style={styles.child}>
           <Text style={styles.text1}>
             First

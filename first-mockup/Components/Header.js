@@ -1,12 +1,10 @@
 import React, { Component } from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, StatusBar } from 'react-native';
 
 export default class Header extends Component {
   render() {
     return (
-      <View style={styles.header}>
-        {/* <Text> I am the Header </Text> */}
-      </View>
+      <View style={styles.header}></View>
     )
   }
 }

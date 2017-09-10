@@ -1,8 +1,9 @@
 import React from 'react';
-import Expo from 'expo'; // <~~~~~~ THIS
+// import Expo from 'expo'; // <~~~~~~ Do I need this????????
 import { StyleSheet, Text, View } from 'react-native';
-import { styles } from './CSS/stylesheet'; // <~~~~ importing the CSS StyleSheet
+import { styles } from './css/stylesheet'; // <~~~~ importing the CSS StyleSheet
 import Dupe from './components/design1';
+import Header from './components/header';
 
 export default class App extends React.Component {
   // constructor() { // not using right now, but just like React
@@ -12,12 +13,11 @@ export default class App extends React.Component {
   //   };
   // }
   render() {
-    console.log('Well, hello there!')
-    // console.log(StyleSheet.create()); <~~~~ Look at the *.md files in node_modules/react-native/docs !!!
+    console.log('Well, hello there!');
     return ( // the JSX is different than in React
       <View style={styles.container}>
-        <Text>Open up App.js to start working on your app!</Text>
-        <Text>This is totally cool!</Text>
+        <Header />
+        <Text>This TEXT is from App.js</Text>
         <View style={styles.child}>
           <Text style={styles.text1}>
             First
@@ -33,10 +33,10 @@ export default class App extends React.Component {
             Third
           </Text>
         </View>
-        <Dupe /> {/* // <~~~~~~~~~~~~~~~~~~~~~~ see??? */}
+        <Dupe />
       </View>
     );
   }
 }
 
-Expo.registerRootComponent(App);
+// Expo.registerRootComponent(App);

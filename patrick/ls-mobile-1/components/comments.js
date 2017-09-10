@@ -7,19 +7,19 @@ export default class Comments extends React.Component {
     return (
       <View>
         <Text>This TEXT is from /components/comments.js</Text>
-        <View style={styles.child}>
-          <Text style={styles.text1}>
-            Like
+        <View style={styles.comments}>
+          <Text style={styles.commentText}>
+            Some User: A comment on the picture
           </Text>
         </View>
-        <View style={styles.child}>
-          <Text style={styles.text2}>
-            Share
+        <View style={styles.comments}>
+          <Text style={styles.commentText}>
+            Another User: A comment on the picture
           </Text>
         </View>
-        <View style={styles.child}>
-          <Text style={styles.text3}>
-            Comment
+        <View style={styles.comments}>
+          <Text style={styles.commentText}>
+            And Another User: A comment on the picture
           </Text>
         </View>
       </View>

@@ -22,23 +22,30 @@ export const styles = StyleSheet.create({
     flex: 3,
   },
 
-  child: {
-    height: 50,
-    width: 150,
-    marginBottom: 10,
-    backgroundColor: 'salmon',
+  buttons: {
+    flex: 1,
+    // height: 50,
+    // width: 150,
+    // marginBottom: 10,
+    backgroundColor: 'aliceblue',
     justifyContent: 'center',
+
   },
 
-  child2: {
-    height: 50,
-    width: 150,
-    marginBottom: 10,
+  comments: {
+    flex: 1,
+    // height: 50,
+    // width: 150,
+    // marginBottom: 10,
     backgroundColor: 'salmon',
     justifyContent: 'center',
   },
 
   buttonText: {
     padding: 5,
+  },
+
+  commentText: {
+
   },
 });

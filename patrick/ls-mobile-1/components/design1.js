@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import { styles } from './CSS/stylesheet'; // <~~~~ importing the CSS StyleSheet
+// import { styles } from './CSS/stylesheet'; // <~~~~ importing the CSS StyleSheet
 
 export default class Dupe extends React.Component {
   // constructor() { // not using right now, but just like React
@@ -33,3 +33,5 @@ export default class Dupe extends React.Component {
     );
   }
 }
+
+AppRegistry.registerComponent('Dupe', () => Dupe);

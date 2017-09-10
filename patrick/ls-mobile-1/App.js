@@ -1,7 +1,8 @@
 import React from 'react';
+import Expo from 'expo'; // <~~~~~~ THIS
 import { StyleSheet, Text, View } from 'react-native';
 import { styles } from './CSS/stylesheet'; // <~~~~ importing the CSS StyleSheet
-import Dupe from './components/design';
+import Dupe from './components/design1';
 
 export default class App extends React.Component {
   // constructor() { // not using right now, but just like React
@@ -32,8 +33,10 @@ export default class App extends React.Component {
             Third
           </Text>
         </View>
-        <Dupe />
+        <Dupe /> {/* // <~~~~~~~~~~~~~~~~~~~~~~ see??? */}
       </View>
     );
   }
 }
+
+Expo.registerRootComponent(App);

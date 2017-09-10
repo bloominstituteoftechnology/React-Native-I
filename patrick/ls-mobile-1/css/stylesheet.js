@@ -12,10 +12,14 @@ export const styles = StyleSheet.create({
 
   header: {
     flex: 1,
-    height: 20,
+    // height: 20,
     backgroundColor: 'white',
     borderWidth: 1,
     borderColor: 'red',
+  },
+
+  display: {
+    flex: 3,
   },
 
   child: {
@@ -34,15 +38,7 @@ export const styles = StyleSheet.create({
     justifyContent: 'center',
   },
 
-  text1: {
-    textAlign: 'center',
+  buttonText: {
+    padding: 5,
   },
-
-  text2: {
-    textAlign: 'auto',
-  },
-
-  text3: {
-    textAlign: 'justify',
-  }
 });

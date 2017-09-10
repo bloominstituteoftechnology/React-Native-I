@@ -9,17 +9,17 @@ export default class Comments extends React.Component {
         <Text>This TEXT is from /components/comments.js</Text>
         <View style={styles.child}>
           <Text style={styles.text1}>
-            First
+            Like
           </Text>
         </View>
         <View style={styles.child}>
           <Text style={styles.text2}>
-            Second
+            Share
           </Text>
         </View>
         <View style={styles.child}>
           <Text style={styles.text3}>
-            Third
+            Comment
           </Text>
         </View>
       </View>

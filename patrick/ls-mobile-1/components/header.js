@@ -6,7 +6,7 @@ export default class Header extends React.Component {
   render() {
     return (
       <View style={styles.header}>
-        <Text>HEADER BAR</Text>
+        <Text>Header</Text>
       </View>
     );
   }

@@ -1,5 +1,6 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { View } from 'react-native';
+// import { View, Text } from 'react-native';
 import { styles } from './css/stylesheet';
 
 import Header from './components/header';
@@ -18,7 +19,7 @@ export default class App extends React.Component {
     console.log('Well, hello there!');
     return ( // the JSX is different than in React
       <View style={styles.container}>
-        <Text>This TEXT is from App.js</Text>
+        {/* <Text>This TEXT is from App.js</Text> */}
         <Header />
         <Display />
         <Buttons />

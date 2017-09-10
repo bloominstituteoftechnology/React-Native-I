@@ -5,19 +5,19 @@ import { styles } from '../css/stylesheet';
 export default class Comments extends React.Component {
   render() {
     return (
-      <View>
+      <View style={styles.comments}>
         <Text>This TEXT is from /components/comments.js</Text>
-        <View style={styles.comments}>
+        <View style={styles.comment}>
           <Text style={styles.commentText}>
             Some User: A comment on the picture
           </Text>
         </View>
-        <View style={styles.comments}>
+        <View style={styles.comment}>
           <Text style={styles.commentText}>
             Another User: A comment on the picture
           </Text>
         </View>
-        <View style={styles.comments}>
+        <View style={styles.comment}>
           <Text style={styles.commentText}>
             And Another User: A comment on the picture
           </Text>

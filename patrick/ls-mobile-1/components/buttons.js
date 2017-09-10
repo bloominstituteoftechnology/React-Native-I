@@ -5,7 +5,7 @@ import { styles } from '../css/stylesheet';
 export default class Comments extends React.Component {
   render() {
     return (
-      <View>
+      <View style={styles.buttonRow}>
         <Text>This TEXT is from /components/buttons.js</Text>
         <View style={styles.buttons}>
           <Text style={styles.buttonText}>

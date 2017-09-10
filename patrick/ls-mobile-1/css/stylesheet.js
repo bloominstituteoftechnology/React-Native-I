@@ -5,44 +5,54 @@ export const styles = StyleSheet.create({
     flex: 1,
     display: 'flex',
     backgroundColor: 'whitesmoke',
-    alignItems: 'center',
-    justifyContent: 'center',
     marginTop: 20,
   },
 
   header: {
     flex: 1,
-    // height: 20,
-    backgroundColor: 'white',
+    backgroundColor: 'ivory',
     borderWidth: 1,
     borderColor: 'red',
   },
 
   display: {
-    flex: 3,
+    flex: 1,
+    borderWidth: 1,
+    borderColor: 'green',
+  },
+
+  buttonRow: {
+    flex: 1,
+    borderWidth: 1,
+    borderColor: 'hotpink',
   },
 
   buttons: {
     flex: 1,
-    // height: 50,
-    // width: 150,
-    // marginBottom: 10,
     backgroundColor: 'aliceblue',
     justifyContent: 'center',
-
+    borderWidth: 1,
+    borderColor: 'blue',
   },
 
   comments: {
     flex: 1,
-    // height: 50,
-    // width: 150,
-    // marginBottom: 10,
+    backgroundColor: 'moccasin',
+    justifyContent: 'center',
+    borderWidth: 1,
+    borderColor: 'black',
+  },
+
+  comment: {
+    flex: 1,
     backgroundColor: 'salmon',
     justifyContent: 'center',
+    borderWidth: 1,
+    borderColor: 'black',
   },
 
   buttonText: {
-    padding: 5,
+    // padding: 5,
   },
 
   commentText: {

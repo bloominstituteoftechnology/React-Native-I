@@ -3,7 +3,7 @@ import { StyleSheet, Text, View } from 'react-native';
 // import { AppRegistry, StyleSheet, Text, View } from 'react-native';
 import { styles } from '../css/stylesheet'; // <~~~~ importing the CSS StyleSheet
 
-export default class Dupe extends React.Component {
+export default class Comments extends React.Component {
   // constructor() { // not using right now, but just like React
   //   super();
   //   this.state = {
@@ -13,7 +13,7 @@ export default class Dupe extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text>This TEXT is from /components/design1.js</Text>
+        <Text>This TEXT is from /components/comments.js</Text>
         <View style={styles.child}>
           <Text style={styles.text1}>
             First

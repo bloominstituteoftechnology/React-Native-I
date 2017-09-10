@@ -20,6 +20,9 @@ export const styles = StyleSheet.create({
     flex: 10,
     borderWidth: 1,
     borderColor: 'green',
+
+    // height: 140,
+    // width: 200,
     // resizeMode: 'contain',
   },
 

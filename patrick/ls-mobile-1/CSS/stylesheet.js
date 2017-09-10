@@ -1,5 +1,7 @@
 import { StyleSheet } from 'react-native';
 
+/*
+vvvvvv HOW TO EXPORT THE StyleSheet object */
 export const styles = StyleSheet.create({
   container: {
     flex: 1,

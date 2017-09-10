@@ -8,7 +8,9 @@ export default class NewsFeed extends React.Component {
   render() {
     return (
       <View style={styles.newsfeed}>
-        <Text>Header text from the NEWSFEED component.</Text>
+        <Text style={styles.newsfeedText}>
+          Header text from the NEWSFEED component.
+        </Text>
         <Image
           source={require('../media/9_8_PM_meeting.png')}
           // source={{ uri: 'http://d23dyxeqlo5psv.cloudfront.net/cat.gif' }}
@@ -28,4 +30,8 @@ const styles = StyleSheet.create({
     borderColor: 'green',
     backgroundColor: 'salmon',
   },
+  newsfeedText: {
+    fontSize: 20,
+    fontWeight: 'bold',
+  }
 });

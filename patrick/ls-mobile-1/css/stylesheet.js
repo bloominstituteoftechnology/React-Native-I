@@ -4,62 +4,73 @@ export const styles = StyleSheet.create({
   container: {
     flex: 1,
     display: 'flex',
-    backgroundColor: 'whitesmoke',
+    backgroundColor: 'chocolate',
     marginTop: 20,
   },
 
   header: {
     flex: 1.5,
-    backgroundColor: 'ivory',
+    alignItems: 'center',
     borderWidth: 1,
     borderColor: 'red',
+    backgroundColor: 'ivory',
   },
 
   display: {
     flex: 10,
     borderWidth: 1,
     borderColor: 'green',
+    // resizeMode: 'contain',
   },
 
   buttonRow: {
-    flex: 1.5,
+    flex: 1,
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
     borderWidth: 1,
     borderColor: 'hotpink',
-    flexDirection: 'row'
+    backgroundColor: 'blue',
   },
 
   buttons: {
     // flex: 1.5,
-    backgroundColor: 'aliceblue',
-    justifyContent: 'center',
-    borderWidth: 1,
-    borderColor: 'blue',
-  },
-
-  comments: {
-    flex: 6,
-    backgroundColor: 'moccasin',
-    justifyContent: 'center',
     borderWidth: 1,
     borderColor: 'black',
-  },
-
-  comment: {
-    flex: 1,
-    backgroundColor: 'salmon',
-    justifyContent: 'center',
-    borderWidth: 1,
-    borderColor: 'black',
+    backgroundColor: 'green',
+    paddingLeft: 5,
+    paddingRight: 5,
   },
 
   buttonText: {
     // padding: 5,
     borderWidth: 1,
-    borderColor: 'black'
+    borderColor: 'purple',
+  },
+
+  comments: {
+    flex: 6,
+    // justifyContent: 'center',
+    borderWidth: 1,
+    borderColor: 'green',
+    backgroundColor: 'moccasin',
+    // paddingTop: 10,
+  },
+
+  comment: {
+    // flex: 1,
+    // alignSelf: 'flex-start',
+    // justifyContent: 'center',
+    borderWidth: 1,
+    borderColor: 'black',
+    backgroundColor: 'salmon',
+    marginLeft: 5,
+    marginRight: 5,
   },
 
   commentText: {
     borderWidth: 1,
-    borderColor: 'black'
+    borderColor: 'black',
+    padding: 5,
   },
 });

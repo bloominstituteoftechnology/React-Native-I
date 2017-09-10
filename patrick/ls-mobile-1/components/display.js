@@ -11,7 +11,8 @@ export default class Header extends React.Component {
         <Text>IMAGE DISPLAY</Text> */}
         <Image
           source={{ uri: 'http://d23dyxeqlo5psv.cloudfront.net/cat.gif' }}
-          style={{ height: 140, width: 200 }}
+          style={{ height: 140, width: 200, resizeMode: Image.resizeMode.contain }}
+          // resizeMode='contain'
         />
       </View>
     );

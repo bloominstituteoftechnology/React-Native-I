@@ -12,6 +12,7 @@ export default class App extends React.Component {
         <SearchBar />
         <Banner />
         <NewsFeed />
+        <NewsFeed />
       </View>
     );
   }

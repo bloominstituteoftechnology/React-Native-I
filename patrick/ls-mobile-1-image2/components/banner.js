@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Image, Dimensions, Text } from 'react-native';
+import { StyleSheet, View, Image, Dimensions, Text } from 'react-native';
 // import { styles } from '../css/stylesheet';
 
 const { width, height } = Dimensions.get('window');
@@ -7,13 +7,12 @@ const { width, height } = Dimensions.get('window');
 export default class Banner extends React.Component {
   render() {
     return (
-      // <View style={styles.banner}>
-      <View>
-        <Text>TEXT FROM THE BANNER COMPONENT</Text>
+      <View style={styles.banner}>
+        <Text>Text from the BANNER component.</Text>
         <Image
           // source={require('../media/9_8_PM_meeting.png')}
           source={{ uri: 'http://d23dyxeqlo5psv.cloudfront.net/cat.gif' }}
-          style={{ height: height / 2, width: width }}
+          style={{ height: height / 5, width: width }}
           // resizeMode='contain'
           // resizeMode='cover'
         />
@@ -21,3 +20,11 @@ export default class Banner extends React.Component {
     );
   }
 }
+
+const styles = StyleSheet.create({
+  banner: {
+    borderWidth: 1,
+    borderColor: 'blue',
+    backgroundColor: 'gold',
+  },
+});

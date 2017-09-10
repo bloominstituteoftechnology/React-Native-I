@@ -1,6 +1,5 @@
 import { StyleSheet } from 'react-native';
-/*
-vvvvvv HOW TO EXPORT THE StyleSheet object */
+
 export const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -24,8 +23,7 @@ export const styles = StyleSheet.create({
     width: 150,
     marginBottom: 10,
     backgroundColor: 'salmon',
-    // alignItems: 'center',
-    justifyContent: 'center', // <~~~~ that's how.
+    justifyContent: 'center',
   },
 
   child2: {
@@ -33,14 +31,11 @@ export const styles = StyleSheet.create({
     width: 150,
     marginBottom: 10,
     backgroundColor: 'salmon',
-    // alignItems: 'center',
-    justifyContent: 'center', // <~~~~ that's how.
+    justifyContent: 'center',
   },
 
   text1: {
-    // alignSelf: 'center',
     textAlign: 'center',
-    // textAlignVertical: 'center', // <~~~~ HOW?????
   },
 
   text2: {

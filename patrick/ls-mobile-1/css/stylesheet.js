@@ -20,10 +20,6 @@ export const styles = StyleSheet.create({
     flex: 10,
     borderWidth: 1,
     borderColor: 'green',
-
-    // height: 140,
-    // width: 200,
-    // resizeMode: 'contain',
   },
 
   buttonRow: {
@@ -37,7 +33,6 @@ export const styles = StyleSheet.create({
   },
 
   buttons: {
-    // flex: 1.5,
     borderWidth: 1,
     borderColor: 'black',
     backgroundColor: 'green',
@@ -46,24 +41,18 @@ export const styles = StyleSheet.create({
   },
 
   buttonText: {
-    // padding: 5,
     borderWidth: 1,
     borderColor: 'purple',
   },
 
   comments: {
     flex: 6,
-    // justifyContent: 'center',
     borderWidth: 1,
     borderColor: 'green',
     backgroundColor: 'moccasin',
-    // paddingTop: 10,
   },
 
   comment: {
-    // flex: 1,
-    // alignSelf: 'flex-start',
-    // justifyContent: 'center',
     borderWidth: 1,
     borderColor: 'black',
     backgroundColor: 'salmon',

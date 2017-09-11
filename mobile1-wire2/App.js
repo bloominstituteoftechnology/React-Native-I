@@ -16,20 +16,28 @@ export default class App extends React.Component {
           <Text style={styles.whiteText}>Some Random Header</Text>
         </View>
         <View style={styles.flexImages}>
-          <View style={styles.image}>
-          </View>
-          <View style={styles.image}>
-          </View>
+          <Image 
+            style= {styles.image}
+            source={require('./assets/fidget.jpeg')} 
+          />
+          <Image 
+            style= {styles.image}
+            source={require('./assets/fidget.jpeg')} 
+          />
         </View>
         <Text style={styles.whiteText}>This is a bunch of smaller text that is giving information about the two images up above etc...</Text>
         <View style={styles.textContainer}>
           <Text style={styles.whiteText}>Some Random Header 2</Text>
         </View>
         <View style={styles.flexImages}>
-          <View style={styles.image}>
-          </View>
-          <View style={styles.image}>
-          </View>
+          <Image 
+            style= {styles.image}
+            source={require('./assets/fidget.jpeg')} 
+          />
+          <Image 
+            style= {styles.image}
+            source={require('./assets/fidget.jpeg')} 
+          />
         </View>
         <Text style={styles.whiteText}>This is a bunch of smaller text that is giving information about the two images up above etc...</Text>
       </View>
@@ -53,21 +61,22 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   banner: {
-    flex: 1,
+    flex: 2,
     resizeMode: 'contain',
   },
   flexImages: {
     display: 'flex',
     flexDirection: 'row',
-    flex: 1,
+    flex: 2,
   },
   flexImagesSize: {
   resizeMode: 'contain',
   },
   image: {
-    backgroundColor: 'green',
     flex: 2,
+    height: 150,
     marginRight: 5,
+    resizeMode: 'cover',
   },
   whiteText: {
     color: '#FFF',

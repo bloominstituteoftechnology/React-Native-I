@@ -8,13 +8,12 @@ export default class Banner extends React.Component {
   render() {
     return (
       <View style={styles.banner}>
-        <Text>Text from the BANNER component.</Text>
         <Image
-          // source={require('../media/9_8_PM_meeting.png')}
           source={{ uri: 'http://d23dyxeqlo5psv.cloudfront.net/cat.gif' }}
           style={{ height: height / 5, width: width }}
           // resizeMode='contain'
           // resizeMode='cover'
+          // resizeMode='stretch'
         />
       </View>
     );
@@ -23,8 +22,9 @@ export default class Banner extends React.Component {
 
 const styles = StyleSheet.create({
   banner: {
-    borderWidth: 1,
-    borderColor: 'blue',
-    backgroundColor: 'gold',
+    flexDirection: 'row',
+    // borderWidth: 1,
+    // borderColor: 'blue',
+    // backgroundColor: 'gold',
   },
 });

@@ -79,16 +79,19 @@ const styles = StyleSheet.create({
     flex: 12,
     borderWidth: 1,
     borderColor: 'black',
-    zIndex: 2,
+    backgroundColor: 'black',
+    marginLeft: 110,
+    marginRight: 110,
   },
   textHeader: {
     fontSize: 18,
     textAlign: 'center',
+    color: 'white',
+
   },
 
   child2: {
     flex: 50,
-    zIndex: 3,
     // borderWidth: 1,
     // borderColor: 'green',
     // resizeMode: 'stretch',
@@ -97,7 +100,6 @@ const styles = StyleSheet.create({
 
   child3: {
     flex: 10,
-    zIndex: 4,
     // height: 10,
     // width: 140,
     // borderWidth: 1,
@@ -129,7 +131,6 @@ const styles = StyleSheet.create({
 
   child4: {
     flex: 27,
-    zIndex: 5,
     // height: 25,
     // width: 300,
     // borderWidth: 1,

@@ -1,3 +1,6 @@
+// known 'features' header text is not center aligned, textAlign : 'center' does not seem to work. am looking at it
+//                  bigger issue : comments are not showing up as rows. Asked for help on Cs1 help. 
+
 import React from 'react';
 import { StyleSheet, Text, View, Image, Button } from 'react-native';
 

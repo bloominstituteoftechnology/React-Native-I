@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, View, TextInput, Dimensions } from 'react-native';
+import { StyleSheet, View, TextInput, Dimensions, Button, Alert } from 'react-native';
 
 const { width, height } = Dimensions.get('window');
 
@@ -11,6 +11,13 @@ export default class SearchBar extends React.Component {
     };
   }
 
+  _handleButtonPress = () => {
+    Alert.alert(
+      'Button pressed!',
+      'You did it!',
+    );
+  };
+
   _handleTextChange = inputValue => {
     this.setState({ inputValue });
   };
@@ -18,6 +25,10 @@ export default class SearchBar extends React.Component {
   render() {
     return (
       <View style={styles.searchbar}>
+        <Button
+          title="≡"
+          onPress={this._handleButtonPress}
+        />
         <TextInput
            value={this.state.inputValue}
            onChangeText={this._handleTextChange}
@@ -30,17 +41,19 @@ export default class SearchBar extends React.Component {
 
 const styles = StyleSheet.create({
   searchbar: {
+    flexDirection: 'row',
+    paddingTop: 2,
+  },
+  input: {
+    height: 25,
     borderWidth: 1,
     // borderColor: 'red',
     // backgroundColor: 'pink',
-    height: 25,
     borderRadius: 20,
-    marginLeft: 30,
+    // marginLeft: 30,
     marginRight: 5,
     marginTop: 2,
     marginBottom: 2,
-  },
-  input: {
     width: width * .85,
     padding: 8,
   },

@@ -28,9 +28,10 @@ export default class SearchBar extends React.Component {
 const styles = StyleSheet.create({
   searchbar: {
     borderWidth: 1,
-    borderColor: 'red',
-    backgroundColor: 'pink',
+    // borderColor: 'red',
+    // backgroundColor: 'pink',
     borderRadius: 20,
     marginLeft: 30,
+    marginRight: 5,
   },
 });

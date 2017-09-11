@@ -23,9 +23,9 @@ export default class Banner extends React.Component {
 
 const styles = StyleSheet.create({
   banner: {
-    borderWidth: 1,
-    borderColor: 'blue',
-    backgroundColor: 'gold',
     flexDirection: 'row',
+    // borderWidth: 1,
+    // borderColor: 'blue',
+    // backgroundColor: 'gold',
   },
 });

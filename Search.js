@@ -1,6 +1,5 @@
 import React from 'react';
-import { Image, Text, View } from 'react-native';
-import { Button, SearchBar } from 'react-native-elements';
+import { View } from 'react-native';
 import Header from './SearchHeader';
 import Content from './SearchContent';
 import styles from './SearchStyleSheet';

@@ -1,7 +1,7 @@
 # Completed Images
-![alt text](./img/IMG-2676.JPG "Image 1")
+![alt text](./img/1.JPG "Image 1")
 
-![alt text](./img/IMG-2677.JPG "Image 2")
+![alt text](./img/2.JPG "Image 2")
 
 
 # Mobile I

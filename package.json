@@ -1,0 +1,26 @@
+{
+  "name": "Todos",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "babel-preset-react-native-stage-0": "^1.0.1",
+    "jest-expo": "23.0.0",
+    "react-test-renderer": "16.0.0"
+  },
+  "scripts": {
+    "start": "react-native start",
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "test": "node node_modules/jest/bin/jest.js --watch"
+  },
+  "jest": {
+    "preset": "jest-expo"
+  },
+  "dependencies": {
+    "axios": "^0.17.1",
+    "immutability-helper": "^2.6.3",
+    "react": "16.0.0",
+    "react-native": "0.50.3",
+    "react-navigation": "^1.0.0-beta.23"
+  }
+}

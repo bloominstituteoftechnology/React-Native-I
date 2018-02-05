@@ -1,25 +1,23 @@
 import React from 'react';
 import { StyleSheet, Text, View, Image } from 'react-native';
 const mountain = require('./images/mountain.jpg');
-const sentinelDome = require('./images/sentinelDome.jpg');
+const DesignI = require('./DesignI');
+const DesignII = require('./DesignII');
 
 export default class App extends React.Component {
   render() {
     return (
       <View style={container}>
+        <Text style={headerText}>Some Random Header</Text>
         <Image style={bannerImage} source={mountain} />
-        <Text style={headerText}>Some Random Header</Text>
-        <View style={imageHalfScreen}>
-          <Image style={imageHalfScreenLeft} source={mountain} />
-          <Image style={imageHalfScreenRight} source={mountain} />
+        <View style = {options}>
+          <Text style={optionsItem}>Like</Text>
+          <Text style={optionsItem}>Share</Text>
+          <Text style={optionsItem}>Comment</Text>
         </View>
-        <Text style={textBox}>This is a bunch of smaller text that is giving information about the two images up above. You might see this kind of a design on a news site.</Text>
-        <Text style={headerText}>Some Random Header</Text>
-        <View style={imageHalfScreen}>
-          <Image style={imageHalfScreenLeft} source={mountain} />
-          <Image style={imageHalfScreenRight} source={mountain} />
-        </View>
-        <Text style={textBox}>This is a bunch of smaller text that is giving information about the two images up above. You might see this kind of a design on a news site.</Text>
+        <Text style={textBox}>Some User: A comment on the picture</Text>
+        <Text style={textBox}>Another User: A comment on the picture</Text>
+        <Text style={textBox}>And Another User: A comment on the picture</Text>
       </View>
     );
   }
@@ -33,30 +31,31 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   bannerImage: {
-    flex: 1,
+    flex: 4,
     height: 100,
     width: 800,
   },
   headerText: {
     flex: 1,
     fontSize: 24,
+    paddingTop: 60,
   },
-  imageHalfScreen: {
+  options: {
     flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
   },
-  imageHalfScreenLeft: {
-    flex: 1,
-    height: 100,
-    width: 100,
-  },
-  imageHalfScreenRight: {
-    flex: 1,
-    height: 100,
-    width: 100,
+  optionsItem: {
+    marginTop: 10,
+    marginBottom: 10,
+    padding: 5,
+    borderColor: 'black',
+    borderWidth: 0.5,
   },
   textBox: {
     margin: 5,
     padding: 5,
+    width: 350,
     justifyContent: 'flex-start',
     fontSize: 16,
     borderColor: 'black',
@@ -64,4 +63,4 @@ const styles = StyleSheet.create({
   }
 });
 
-const { container, bannerImage, headerText, imageHalfScreen, imageHalfScreenLeft, imageHalfScreenRight, textBox } = styles;
+const { container, bannerImage, headerText, options, optionsItem, textBox } = styles;

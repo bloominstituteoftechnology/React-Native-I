@@ -15,9 +15,11 @@ export default class App extends React.Component {
           <Text style={optionsItem}>Share</Text>
           <Text style={optionsItem}>Comment</Text>
         </View>
-        <Text style={textBox}>Some User: A comment on the picture</Text>
-        <Text style={textBox}>Another User: A comment on the picture</Text>
-        <Text style={textBox}>And Another User: A comment on the picture</Text>
+        <View style={allText} >
+          <Text style={textBox}>Some User: A comment on the picture</Text>
+          <Text style={textBox}>Another User: A comment on the picture</Text>
+          <Text style={textBox}>And Another User: A comment on the picture</Text>
+        </View>
       </View>
     );
   }
@@ -52,6 +54,9 @@ const styles = StyleSheet.create({
     borderColor: 'black',
     borderWidth: 0.5,
   },
+  allText: {
+    marginBottom: 20,
+  },
   textBox: {
     margin: 5,
     padding: 5,
@@ -63,4 +68,4 @@ const styles = StyleSheet.create({
   }
 });
 
-const { container, bannerImage, headerText, options, optionsItem, textBox } = styles;
+const { container, bannerImage, headerText, options, optionsItem, allText, textBox } = styles;

@@ -8,6 +8,16 @@ export default class DesignI extends React.Component {
       <View style={container}>
         <Text style={headerText}>Some Random Header</Text>
         <Image style={bannerImage} source={mountain} />
+        <View style = {options}>
+          <Text style={optionsItem}>Like</Text>
+          <Text style={optionsItem}>Share</Text>
+          <Text style={optionsItem}>Comment</Text>
+        </View>
+        <View style={allText} >
+          <Text style={textBox}>Some User: A comment on the picture</Text>
+          <Text style={textBox}>Another User: A comment on the picture</Text>
+          <Text style={textBox}>And Another User: A comment on the picture</Text>
+        </View>
       </View>
     );
   }
@@ -21,30 +31,34 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   bannerImage: {
-    flex: 1,
+    flex: 4,
     height: 100,
     width: 800,
   },
   headerText: {
     flex: 1,
     fontSize: 24,
+    paddingTop: 60,
   },
-  imageHalfScreen: {
+  options: {
     flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
   },
-  imageHalfScreenLeft: {
-    flex: 1,
-    height: 100,
-    width: 100,
+  optionsItem: {
+    marginTop: 10,
+    marginBottom: 10,
+    padding: 5,
+    borderColor: 'black',
+    borderWidth: 0.5,
   },
-  imageHalfScreenRight: {
-    flex: 1,
-    height: 100,
-    width: 100,
+  allText: {
+    marginBottom: 20,
   },
   textBox: {
     margin: 5,
     padding: 5,
+    width: 350,
     justifyContent: 'flex-start',
     fontSize: 16,
     borderColor: 'black',
@@ -52,4 +66,4 @@ const styles = StyleSheet.create({
   }
 });
 
-const { container, bannerImage, headerText } = styles;
+const { container, bannerImage, headerText, options, optionsItem, allText, textBox } = styles;

@@ -1,6 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, View, Image } from 'react-native';
 const mountain = require('./images/mountain.jpg');
+import Comments from './Comments.js';
 
 export default class DesignI extends React.Component {
   render() {
@@ -13,11 +14,7 @@ export default class DesignI extends React.Component {
           <Text style={optionsItem}>Share</Text>
           <Text style={optionsItem}>Comment</Text>
         </View>
-        <View style={allText} >
-          <Text style={textBox}>Some User: A comment on the picture</Text>
-          <Text style={textBox}>Another User: A comment on the picture</Text>
-          <Text style={textBox}>And Another User: A comment on the picture</Text>
-        </View>
+        <Comments />
       </View>
     );
   }

@@ -11,9 +11,9 @@ import {
 const Comments = () => {
     return (
         <View style={styles.commentContainer}>
-          <Text style={styles.Comments}>Some User: A comment on the picture</Text>
-          <Text style={styles.Comments}>Another User: A comment on the picture</Text>
-          <Text style={styles.Comments}>And Another User: A comment on the picture</Text>
+          <Text style={styles.Comments}>blah blah blah</Text>
+          <Text style={styles.Comments}>blah blah blah</Text>
+          <Text style={styles.Comments}>blah blah blah</Text>
         </View>
       
     );

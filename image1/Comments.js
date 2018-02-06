@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, Image, FlatList, Button, Alert } from 'react-native';
+import { StyleSheet, Text, View, Image, FlatList, Button, Alert, TextInput } from 'react-native';
 
 export default class Comments extends React.Component {
     constructor() {
@@ -31,6 +31,16 @@ export default class Comments extends React.Component {
     handleButtonClick= () => {
         console.log('why is it clicking without me clicking it');
     };
+    handleCommentButtonClick = () => {
+        render() {
+            return (
+                <View>
+                    <TextInput placeholder = 'username' />
+                    <TextInput placeholder = 'comment' />
+                </View>
+            );
+        };
+    }
 
     render() {
         return (

@@ -5,17 +5,10 @@ export default class Comments extends React.Component {
     constructor() {
         super();
         this.state = {
+            commentButtonClicked: false,
             likes: 0,
-            comments: [
-                {
-                    user: 'Some User',
-                    comment: 'A comment on the picture',
-                },
-                {
-                    user: 'Another User',
-                    comment: 'A comment on the picture',
-                },
-            ],
+            comments: [],
+            newUser: '',
             newComment: '',
         };
     }
@@ -28,18 +21,32 @@ export default class Comments extends React.Component {
         Alert.alert( 'You have shared this image!');
     }
 
-    handleButtonClick= () => {
-        console.log('why is it clicking without me clicking it');
-    };
     handleCommentButtonClick = () => {
-        render() {
-            return (
-                <View>
-                    <TextInput placeholder = 'username' />
-                    <TextInput placeholder = 'comment' />
-                </View>
-            );
-        };
+        this.setState({ commentButtonClicked: !this.state.commentButtonClicked });
+    }
+
+    handleUserNameInput = (username) => {
+        this.setState({ newUser: username });
+    }
+
+    handleCommentInput = (comment) => {
+        this.setState({ newComment : comment });
+    }
+    handleSubmitButtonClick = () => {
+        this.setState(prevState => {
+            const commentButtonClicked = false;
+            const {likes, comments} = prevState;
+            const newCommentsList = [...comments, { user: this.state.newUser, comment: this.state.newComment} ];
+            const newUser = '';
+            const newComment = '';
+            return {
+                commentButtonClicked: false,
+                likes,
+                comments : newCommentsList,
+                newUser: '',
+                newComment: ''
+            };
+        });
     }
 
     render() {
@@ -48,16 +55,25 @@ export default class Comments extends React.Component {
                 <View style = {options}>
                     <Button onPress={this.handleLikeButtonClick} style={optionsItem} title='Like' />
                     <Button onPress={this.handleShareButtonClick} style={optionsItem} title='Share' />
-                    <Button onPress={this.handleButtonClick} style={optionsItem} title='Comment' />
+                    <Button onPress={this.handleCommentButtonClick} style={optionsItem} title='Comment' />
                 </View>
+
+                {this.state.commentButtonClicked ? <View style={comment}>
+                    <TextInput onChangeText={this.handleUserNameInput} placeholder = 'enter your username' style={commentItem} />
+                    <TextInput onChange={this.handleCommentInput} placeholder = 'enter a comment' style={commentItem} />
+                    <Button onPress={this.handleSubmitButtonClick} title='Submit Comment' />
+                </View> : null}
+
                 <Text>Likes: {this.state.likes}</Text>
-                <View style={allText}>
+
+                {this.state.comments.length > 0 ? <View style={allText}>
                     {this.state.comments.map((item, index) => (
                         <View key = {index}>
                             <Text style={textBox}>{item.user}:{item.comment}</Text>
                         </View>
                     ))}
-                </View>
+                </View>: <Text>No Comments Yet.</Text>}
+
             </View>
         );
     };
@@ -77,6 +93,13 @@ const styles = StyleSheet.create({
       borderWidth: 0.5,
       height: '100%',
     },
+    comment: {
+        margin: 5,
+        backgroundColor: '#d3d3d3',
+    },
+    commentItem: {
+        color: '#000',
+    },
     allText: {
       marginBottom: 20,
     },
@@ -88,7 +111,11 @@ const styles = StyleSheet.create({
       fontSize: 16,
       borderColor: 'black',
       borderWidth: 0.5,
-    }
+    },
+    hiddenText: {
+        
+    },
+    visibleText: {},
   });
   
-  const { container, bannerImage, headerText, options, optionsItem, allText, textBox } = styles;
+  const { container, bannerImage, headerText, options, optionsItem, comment, commentItem, allText, textBox } = styles;

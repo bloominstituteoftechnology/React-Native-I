@@ -34,6 +34,6 @@ const styles = StyleSheet.create({
   buttonText: {}
 });
 
-const { buttonsContainer, button, buttonText, shadow } = styles;
+const { buttonsContainer, button, buttonText } = styles;
 
 export default ButtonsWrapper;

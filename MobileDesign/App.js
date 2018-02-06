@@ -15,6 +15,8 @@ export default class App extends React.Component {
         { name: 'Trina', comment: 'I love that beach!' },
       ],
     };
+
+    _keyExtractor = (item, index) => item.id;
   }
 
   render() {
@@ -35,9 +37,14 @@ export default class App extends React.Component {
         </View>
         <FlatList
           data={this.state.comments}
-          renderItem={({ item, index }) => (
-            <Text key={index} style={styles.comment}>{`${item.name}:${item.comment}`}</Text>
-          )}
+          extraData={this.state}
+          renderItem={({ item, key }) => {
+            return (
+              <View key={item.key}>
+                <Text style={styles.comment}>{`${item.name} - ${item.comment}`}</Text>
+              </View>
+            );
+          }}
         />
       </View>
     );

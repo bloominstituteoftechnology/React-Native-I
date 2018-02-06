@@ -1,12 +1,27 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
+import { SearchBar } from 'react-native-elements'
 
-const Header = () => {
+
+const someMethod = () => {
+
+}
+
+const MainPageHeader = () => {
     return (
-        <View style={headerContainer}>
-            <Text style={headerText}>Travelology</Text>
+        <View>
+            <View>
+
+            </View>
+            <View style={headerContainer}>
+                <SearchBar
+                    round
+                    onChangeText={someMethod}
+                    onClearText={someMethod}
+                    placeholder='Type Here...' />
+            </View>
         </View>
-    );
+    )
 };
 
 const styles = StyleSheet.create({
@@ -27,4 +42,4 @@ const styles = StyleSheet.create({
 
 const { headerContainer, headerText } = styles;
 
-export default Header;
+export default MainPageHeader;

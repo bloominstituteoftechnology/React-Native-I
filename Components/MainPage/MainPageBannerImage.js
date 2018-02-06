@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Image, StyleSheet } from 'react-native';
 
-const ImageContainer = () => {
+const MainPageBannerImage = () => {
     return (
         <View style={imageWrapper}>
             <Image
@@ -14,7 +14,7 @@ const ImageContainer = () => {
 
 const styles = StyleSheet.create({
     imageWrapper: {
-        height: 350,
+        height: 100,
     },
     imageProper: {
         height: '100%'
@@ -22,4 +22,4 @@ const styles = StyleSheet.create({
 });
 
 const { imageWrapper, imageProper } = styles;
-export default ImageContainer;
+export default MainPageBannerImage;

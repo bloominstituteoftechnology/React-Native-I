@@ -12,6 +12,10 @@ export default class Comments extends React.Component {
                     user: 'me',
                     comment: 'suuup',
                 },
+                {
+                    user: 'Another User',
+                    comment: 'I like cheese',
+                },
             ],
             newUser: '',
             newComment: '',
@@ -63,7 +67,7 @@ export default class Comments extends React.Component {
 
                 {this.state.commentButtonClicked ? <View style={comment}>
                     <TextInput onChangeText={this.handleUserNameInput} placeholder = 'enter your username' style={commentItem} />
-                    <TextInput onChange={this.handleCommentInput} placeholder = 'enter a comment' style={commentItem} />
+                    <TextInput onChangeText={this.handleCommentInput} placeholder = 'enter a comment' style={commentItem} />
                     <Button onPress={this.handleSubmitButtonClick} title='Submit Comment' />
                 </View> : null}
 

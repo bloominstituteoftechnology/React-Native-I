@@ -7,7 +7,12 @@ export default class Comments extends React.Component {
         this.state = {
             commentButtonClicked: false,
             likes: 0,
-            comments: [],
+            comments: [
+                {
+                    user: 'me',
+                    comment: 'suuup',
+                },
+            ],
             newUser: '',
             newComment: '',
         };
@@ -34,15 +39,13 @@ export default class Comments extends React.Component {
     }
     handleSubmitButtonClick = () => {
         this.setState(prevState => {
-            const commentButtonClicked = false;
-            const {likes, comments} = prevState;
-            const newCommentsList = [...comments, { user: this.state.newUser, comment: this.state.newComment} ];
-            const newUser = '';
-            const newComment = '';
+            const {likes} = prevState;
+            const user = this.state.newUser;
+            const comment = this.state.newComment
             return {
                 commentButtonClicked: false,
                 likes,
-                comments : newCommentsList,
+                comments : [...prevState.comments, {user, comment}],
                 newUser: '',
                 newComment: ''
             };
@@ -69,7 +72,7 @@ export default class Comments extends React.Component {
                 {this.state.comments.length > 0 ? <View style={allText}>
                     {this.state.comments.map((item, index) => (
                         <View key = {index}>
-                            <Text style={textBox}>{item.user}:{item.comment}</Text>
+                            <Text style={textBox}>{item.user} : {item.comment}</Text>
                         </View>
                     ))}
                 </View>: <Text>No Comments Yet.</Text>}

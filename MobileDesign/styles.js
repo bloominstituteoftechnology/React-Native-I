@@ -30,11 +30,12 @@ export default StyleSheet.create({
     margin: 5,
   },
   commentContainer: {
+    display: 'flex',
+    flexDirection: 'row',
     marginTop: 25,
   },
   comment: {
-    fontSize: 20,
-    marginBottom: 15,
+    fontSize: 14,
   },
   image: {
     height: 400,

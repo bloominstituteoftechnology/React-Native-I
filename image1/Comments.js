@@ -1,10 +1,11 @@
 import React from 'react';
-import { StyleSheet, Text, View, Image, FlatList, Button } from 'react-native';
+import { StyleSheet, Text, View, Image, FlatList, Button, Alert } from 'react-native';
 
 export default class Comments extends React.Component {
     constructor() {
         super();
         this.state = {
+            likes: 0,
             comments: [
                 {
                     user: 'Some User',
@@ -19,18 +20,27 @@ export default class Comments extends React.Component {
         };
     }
 
+    handleLikeButtonClick = () => {
+        this.setState({ likes: this.state.likes + 1 });
+    }
+
+    handleShareButtonClick = () => {
+        Alert.alert( 'You have shared this image!');
+    }
+
     handleButtonClick= () => {
-        console.log('hey');
+        console.log('why is it clicking without me clicking it');
     };
 
     render() {
         return (
             <View>
                 <View style = {options}>
-                    <Button onPress={this.handleButtonClick()} style={optionsItem} title='Like' />
-                    <Button onPress={this.handleButtonClick()} style={optionsItem} title='Share' />
-                    <Button onPress={this.handleButtonClick()} style={optionsItem} title='Comment' />
+                    <Button onPress={this.handleLikeButtonClick} style={optionsItem} title='Like' />
+                    <Button onPress={this.handleShareButtonClick} style={optionsItem} title='Share' />
+                    <Button onPress={this.handleButtonClick} style={optionsItem} title='Comment' />
                 </View>
+                <Text>Likes: {this.state.likes}</Text>
                 <View style={allText}>
                     {this.state.comments.map((item, index) => (
                         <View key = {index}>
@@ -48,12 +58,14 @@ const styles = StyleSheet.create({
       flexDirection: 'row',
       justifyContent: 'center',
       alignItems: 'center',
+      height: 60,
     },
     optionsItem: {
       margin: 10,
       padding: 5,
       borderColor: 'black',
       borderWidth: 0.5,
+      height: '100%',
     },
     allText: {
       marginBottom: 20,

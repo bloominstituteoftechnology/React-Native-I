@@ -10,7 +10,7 @@ export default class App extends React.Component {
   render() {
     return (
       <View style={container}>
-        <Text style={headerText}>Header</Text>
+        <Text style={headerText}>Instagraham</Text>
         <Image style={bannerImage} source={sentinelDome} />
         <Comments />
       </View>
@@ -26,13 +26,13 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   bannerImage: {
-    flex: 5,
+    flex: 4,
     height: 100,
     width: 800,
   },
   headerText: {
     fontSize: 24,
-    paddingTop: 60,
+    paddingTop: '10%',
   },
 });
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
-import { Header, ImageContainer, ButtonsWrapper } from './components';
+import { Header, ImageContainer, ButtonsWrapper, Comments } from './components';
 
 export default class App extends React.Component {
   render() {
@@ -9,6 +9,7 @@ export default class App extends React.Component {
         <Header />
         <ImageContainer />
         <ButtonsWrapper />
+        <Comments />
       </View>
     );
   }

@@ -56,7 +56,6 @@ yarn start -- --reset-cache
 #### `npm test`
 
 Runs the [jest](https://github.com/facebook/jest) test runner on your tests.
-
 #### `npm run ios`
 
 Like `npm start`, but also attempts to open your app in the iOS Simulator if you're on a Mac and have it installed.

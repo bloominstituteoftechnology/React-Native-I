@@ -19,7 +19,7 @@ const styles = StyleSheet.create({
     alignItems: 'center'
   },
   Box: {
-    height: 70,
+    height: 100,
     width: '50%',
     borderWidth: 0.5,
     borderColor: 'black',

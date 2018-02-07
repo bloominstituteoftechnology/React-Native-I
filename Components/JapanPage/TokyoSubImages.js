@@ -18,12 +18,13 @@ const TokyoSubImages = () => {
 
 const styles = StyleSheet.create({
     imageWrapper: {
+        flex: 1,
         flexDirection: 'row',
         height: 100,
-        width: 200,
+        marginHorizontal: 3
     },
     imageProper: {
-        height: '100%'
+        width: 184.5
     }
 });
 

@@ -1,25 +1,32 @@
 import React from 'react';
-import { View, Image, StyleSheet } from 'react-native';
+import { View, Text, StyleSheet } from 'react-native';
 
 const KyotoSubHeader = () => {
     return (
-        <View style={imageWrapper}>
-            <Image
-                style={imageProper}
-                source={{ uri: 'http://blog.buckitdream.com/wp-content/uploads/2017/11/tokyo-mud-bath-bar-mudbath0716.jpg' }}
-            />
+        <View style={headerContainer}>
+            <Text style={headerText}>Kyoto</Text>
         </View>
     );
 };
 
 const styles = StyleSheet.create({
-    imageWrapper: {
-        height: 350,
+    headerContainer: {
+        backgroundColor: '#56D2C7',
+        height: 60,
+        justifyContent: 'center',
+        marginTop: 20,
+        marginBottom: 3,
+        marginHorizontal: 3
     },
-    imageProper: {
-        height: '100%'
+    headerText: {
+        textAlign: 'center',
+        fontFamily: 'Avenir',
+        fontSize: 25,
+        fontWeight: 'bold',
+        color: 'white'
     }
 });
 
-const { imageWrapper, imageProper } = styles;
+const { headerContainer, headerText } = styles;
+
 export default KyotoSubHeader;

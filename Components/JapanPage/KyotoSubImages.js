@@ -1,30 +1,32 @@
 import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Image, StyleSheet } from 'react-native';
 
-const KyotoSubImages = () => {
+const TokyoSubImages = () => {
     return (
-        <View style={headerContainer}>
-            <Text style={headerText}>Tokyo</Text>
+        <View style={imageWrapper}>
+            <Image
+                style={imageProper}
+                source={{ uri: 'http://static5.businessinsider.com/image/5818c9bbdd08956c5a8b47b1/19-photos-that-show-why-kyoto-and-tokyo-were-voted-the-best-cities-in-the-world.jpg' }}
+            />
+            <Image
+                style={imageProper}
+                source={{ uri: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKx4AdvqZuFQkLDmii1JLeOiRsJzdTxGt599iN-Ixkfb07pzya' }}
+            />
         </View>
     );
 };
 
 const styles = StyleSheet.create({
-    headerContainer: {
-        backgroundColor: '#56D2C7',
-        height: 70,
-        marginTop: 45,
-        justifyContent: 'center',
+    imageWrapper: {
+        flex: 1,
+        flexDirection: 'row',
+        height: 100,
+        marginHorizontal: 3
     },
-    headerText: {
-        textAlign: 'center',
-        fontFamily: 'Avenir',
-        fontSize: 25,
-        fontWeight: 'bold',
-        color: 'white'
+    imageProper: {
+        width: 184.5
     }
 });
 
-const { headerContainer, headerText } = styles;
-
-export default KyotoSubImages;
+const { imageWrapper, imageProper } = styles;
+export default TokyoSubImages;

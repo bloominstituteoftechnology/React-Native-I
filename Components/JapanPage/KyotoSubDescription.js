@@ -5,7 +5,7 @@ const KyotoSubDescription = () => {
     return (
         <View style={commentsContainer}>
             <View style={commentContainer}>
-                <Text style={commentText}>yay</Text>
+                <Text style={commentText}>Kyoto (京都, Kyōto) served as Japan's capital and the emperor's residence from 794 until 1868. It is one of the country's ten largest cities with a population of 1.5 million people and a modern face.</Text>
             </View>
 
         </View>
@@ -15,7 +15,7 @@ const KyotoSubDescription = () => {
 const styles = StyleSheet.create({
     commentsContainer: {
         height: 100,
-        margin: 2
+        margin: 3
     },
     commentContainer: {
         backgroundColor: '#56D2C7',

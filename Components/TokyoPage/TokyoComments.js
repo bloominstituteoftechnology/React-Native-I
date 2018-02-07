@@ -20,7 +20,7 @@ const TokyoComments = () => {
 const styles = StyleSheet.create({
     commentsContainer: {
         height: 100,
-        margin: 2
+        marginVertical: 2
     },
     commentContainer: {
         backgroundColor: '#56D2C7',

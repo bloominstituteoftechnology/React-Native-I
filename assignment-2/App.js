@@ -3,6 +3,7 @@ import { StyleSheet, Text, View } from 'react-native';
 import { Banner } from './components/Banner.js';
 import { ContentBox } from './components/ContentBox.js';
 import { Boxes } from './components/Boxes.js';
+import { WordBox } from './components/WordBox.js';
 export default class App extends React.Component {
   render() {
     return (
@@ -10,8 +11,10 @@ export default class App extends React.Component {
         <Banner />
         <ContentBox />
         <Boxes />
+        <WordBox />
         <ContentBox />
         <Boxes />
+        <WordBox />
       </View>
     );
   }

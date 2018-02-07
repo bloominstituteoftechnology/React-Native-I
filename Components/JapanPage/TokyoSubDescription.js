@@ -15,7 +15,8 @@ const TokyoSubDescription = () => {
 const styles = StyleSheet.create({
     commentsContainer: {
         height: 100,
-        margin: 3
+        marginHorizontal: 3,
+        marginBottom: 3
     },
     commentContainer: {
         backgroundColor: '#56D2C7',

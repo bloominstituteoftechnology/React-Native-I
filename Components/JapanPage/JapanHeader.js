@@ -1,45 +1,41 @@
 import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text, StyleSheet, Image, TouchableOpacity } from 'react-native';
 import { SearchBar } from 'react-native-elements'
 
 
-const someMethod = () => {
-
-}
-
 const JapanHeader = () => {
     return (
-        <View>
-            <View>
-
-            </View>
-            <View style={headerContainer}>
-                <SearchBar
-                    round
-                    onChangeText={someMethod}
-                    onClearText={someMethod}
-                    placeholder='Type Here...' />
-            </View>
+        <View style={headerContainer}>
+            <TouchableOpacity>
+                <Image
+                    style={imageProper}
+                    source={{ uri: 'http://www.stickpng.com/assets/images/588a64e7d06f6719692a2d11.png' }}
+                />
+            </TouchableOpacity>
+            <SearchBar containerStyle={searchBar} round placeholder='Enter Destination...' />
         </View>
     )
 };
 
 const styles = StyleSheet.create({
     headerContainer: {
+        flexDirection: 'row',
         backgroundColor: '#56D2C7',
-        height: 60,
-        marginTop: 45,
         justifyContent: 'center',
+        height: 50,
+        marginTop: 25,
     },
-    headerText: {
-        textAlign: 'center',
-        fontFamily: 'Avenir',
-        fontSize: 25,
-        fontWeight: 'bold',
-        color: 'white'
+    imageProper: {
+        marginHorizontal: 8,
+        marginVertical: 8,
+        width: 30,
+        height: 30
+    },
+    searchBar: {
+        width: 330
     }
 });
 
-const { headerContainer, headerText } = styles;
+const { headerContainer, imageProper, searchBar } = styles;
 
 export default JapanHeader;

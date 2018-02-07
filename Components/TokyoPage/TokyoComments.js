@@ -8,10 +8,10 @@ const TokyoComments = () => {
                 <Text style={commentText}>jayc12312: I want to go there!</Text>
             </View>
             <View style={commentContainer}>
-                <Text style={commentText}>crazYCat23: Where is this?</Text>
+                <Text style={commentText}>crazYCat23: Nice photo!</Text>
             </View>
             <View style={commentContainer}>
-                <Text style={commentText}>SFBoundsss: Awesome!</Text>
+                <Text style={commentText}>SFBoundsss: Awesome =)</Text>
             </View>
         </View>
     );

@@ -7,7 +7,7 @@ class Menu extends Component {
   constructor() {
     super();
     this.state = {
-      activeMenu: false,
+      active: false,
     };
   }
 
@@ -15,9 +15,9 @@ class Menu extends Component {
     return (
       <View style={container}>
         <Hamburger
-          action={this.state.activeMenu}
-          type="spinArrow"
-          onPress={() => this.setState({ activeMenu: !this.state.activeMenu })}
+          active={this.state.active}
+          type="cross"
+          onPress={() => this.setState({ active: !this.state.active })}
         />
       </View>
     );
@@ -27,6 +27,8 @@ class Menu extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center ',
   },
 });
 

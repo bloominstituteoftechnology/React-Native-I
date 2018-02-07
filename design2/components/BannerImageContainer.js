@@ -1,25 +1,26 @@
 import React from 'react';
 import { View, Image, StyleSheet } from 'react-native';
 
-const ImageContainer = () => {
+const BannerImageContainer = () => {
   return (
-    <View style={imageWrapper}>
+    <View style={imageContainer}>
       <Image style={imageProper} source={{ uri: 'https://www.visitscotland.com/cms-images/about/fairy-pools-skye' }} />
     </View>
   );
 };
 
 const styles = StyleSheet.create({
-  imageWrapper: {
-    borderWidth: 1,
-    borderColor: 'green',
+  imageContainer: {
+    width: '100%',
     height: 300,
+    borderWidth: 1,
+    borderColor: 'red',
   },
   imageProper: {
     height: '100%',
   },
 });
 
-const { imageWrapper, imageProper } = styles;
+const { imageContainer, imageProper } = styles;
 
-export default ImageContainer;
+export default BannerImageContainer;

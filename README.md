@@ -25,3 +25,5 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 https://expo.io/
 
 https://facebook.github.io/react-native/docs/getting-started.html
+
+### NOTE: when running Expo, open the settings cog, select HOST and set it to LAN for quicker reloading of the page as you make changes

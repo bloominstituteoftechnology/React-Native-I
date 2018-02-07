@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, TouchableOpacity, StyleSheet, Text } from 'react-native';
 
-const PostPageButtonsWrapper = () => {
+const TokyoButtonsWrapper = () => {
     return (
         <View style={buttonsContainer}>
             <TouchableOpacity style={button} onPress={() => alert('Pressed')}>
@@ -41,4 +41,4 @@ const styles = StyleSheet.create({
 
 const { buttonsContainer, button, buttonText } = styles;
 
-export default PostPageButtonsWrapper;
+export default TokyoButtonsWrapper;

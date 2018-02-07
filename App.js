@@ -1,25 +1,28 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-import { PostPageHeader, PostPageImageContainer, PostPageButtonsWrapper, PostPageComments } from './Components/PostPage/PostPageIndex';
-import { MainPageHeader, MainPageBannerImage, MainPageSubHeader, MainPageSubImage, MainPageSubDescription } from './Components/MainPage/MainPageIndex';
+import { ScrollView, StyleSheet, Text, View } from 'react-native';
+// import { TokyoHeader, TokyoImageContainer, TokyoButtonsWrapper, TokyoComments } from './Components/TokyoPage/TokyoIndex';
+import { JapanHeader, JapanBannerImage, TokyoSubHeader, TokyoSubImages, TokyoSubDescription, KyotoSubHeader, KyotoSubImages, KyotoSubDescription } from './Components/JapanPage/JapanIndex';
 
 
 export default class App extends React.Component {
   render() {
     return (
       // <View style={container}>
-      //   <PostPageHeader />
-      //   <PostPageImageContainer />
-      //   <PostPageButtonsWrapper />
-      //   <PostPageComments />
+      //   <TokyoHeader />
+      //   <TokyoImageContainer />
+      //   <TokyoButtonsWrapper />
+      //   <TokyoComments />
       // </View>
-      <View style={container}>
-        <MainPageHeader />
-        <MainPageBannerImage />
-        <MainPageSubHeader />
-        <MainPageSubImage />
-        <MainPageSubDescription />
-      </View>
+      <ScrollView style={container}>
+        <JapanHeader />
+        <JapanBannerImage />
+        <TokyoSubHeader />
+        <TokyoSubImages />
+        <TokyoSubDescription />
+        <KyotoSubHeader />
+        <KyotoSubImages />
+        <KyotoSubDescription />
+      </ScrollView>
     );
   }
 }

@@ -1,12 +1,12 @@
 import React from 'react';
 import { View, Image, StyleSheet } from 'react-native';
 
-const MainPageSubImage = () => {
+const JapanBannerImage = () => {
     return (
         <View style={imageWrapper}>
             <Image
                 style={imageProper}
-                source={{ uri: 'http://blog.buckitdream.com/wp-content/uploads/2017/11/tokyo-mud-bath-bar-mudbath0716.jpg' }}
+                source={{ uri: 'http://en.toureast.com/portals/0/img/country/japan/japan_header.jpg' }}
             />
         </View>
     );
@@ -14,7 +14,7 @@ const MainPageSubImage = () => {
 
 const styles = StyleSheet.create({
     imageWrapper: {
-        height: 350,
+        height: 200,
     },
     imageProper: {
         height: '100%'
@@ -22,4 +22,4 @@ const styles = StyleSheet.create({
 });
 
 const { imageWrapper, imageProper } = styles;
-export default MainPageSubImage;
+export default JapanBannerImage;

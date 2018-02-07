@@ -1,10 +1,10 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 
-const MainPageSubHeader = () => {
+const KyotoSubImages = () => {
     return (
         <View style={headerContainer}>
-            <Text style={headerText}>Travelology</Text>
+            <Text style={headerText}>Tokyo</Text>
         </View>
     );
 };
@@ -27,4 +27,4 @@ const styles = StyleSheet.create({
 
 const { headerContainer, headerText } = styles;
 
-export default MainPageSubHeader;
+export default KyotoSubImages;

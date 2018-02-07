@@ -1,18 +1,13 @@
 import React from 'react';
 import { View, TouchableOpacity, StyleSheet, Text } from 'react-native';
 
-const PostPageComments = () => {
+const TokyoSubDescription = () => {
     return (
         <View style={commentsContainer}>
             <View style={commentContainer}>
-                <Text style={commentText}>jayc12312: I want to go there!</Text>
+                <Text style={commentText}>yay</Text>
             </View>
-            <View style={commentContainer}>
-                <Text style={commentText}>crazYCat23: Where is this?</Text>
-            </View>
-            <View style={commentContainer}>
-                <Text style={commentText}>SFBoundsss: Awesome!</Text>
-            </View>
+
         </View>
     );
 };
@@ -35,4 +30,4 @@ const styles = StyleSheet.create({
 
 const { commentsContainer, commentContainer, commentText } = styles;
 
-export default PostPageComments;
+export default TokyoSubDescription;

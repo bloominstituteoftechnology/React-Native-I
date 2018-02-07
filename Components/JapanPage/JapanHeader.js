@@ -7,7 +7,7 @@ const someMethod = () => {
 
 }
 
-const MainPageHeader = () => {
+const JapanHeader = () => {
     return (
         <View>
             <View>
@@ -27,7 +27,7 @@ const MainPageHeader = () => {
 const styles = StyleSheet.create({
     headerContainer: {
         backgroundColor: '#56D2C7',
-        height: 70,
+        height: 60,
         marginTop: 45,
         justifyContent: 'center',
     },
@@ -42,4 +42,4 @@ const styles = StyleSheet.create({
 
 const { headerContainer, headerText } = styles;
 
-export default MainPageHeader;
+export default JapanHeader;

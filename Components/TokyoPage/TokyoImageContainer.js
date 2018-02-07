@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Image, StyleSheet } from 'react-native';
 
-const PostPageImageContainer = () => {
+const TokyoImageContainer = () => {
     return (
         <View style={imageWrapper}>
             <Image
@@ -22,4 +22,4 @@ const styles = StyleSheet.create({
 });
 
 const { imageWrapper, imageProper } = styles;
-export default PostPageImageContainer;
+export default TokyoImageContainer;

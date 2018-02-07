@@ -1,10 +1,10 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 
-const PostPageHeader = () => {
+const TokyoSubHeader = () => {
     return (
         <View style={headerContainer}>
-            <Text style={headerText}>Travelology</Text>
+            <Text style={headerText}>Tokyo</Text>
         </View>
     );
 };
@@ -12,8 +12,7 @@ const PostPageHeader = () => {
 const styles = StyleSheet.create({
     headerContainer: {
         backgroundColor: '#56D2C7',
-        height: 70,
-        marginTop: 45,
+        height: 60,
         justifyContent: 'center',
     },
     headerText: {
@@ -27,4 +26,4 @@ const styles = StyleSheet.create({
 
 const { headerContainer, headerText } = styles;
 
-export default PostPageHeader;
+export default TokyoSubHeader;

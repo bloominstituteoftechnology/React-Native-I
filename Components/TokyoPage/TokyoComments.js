@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, TouchableOpacity, StyleSheet, Text } from 'react-native';
 
-const MainPageSubDescription = () => {
+const TokyoComments = () => {
     return (
         <View style={commentsContainer}>
             <View style={commentContainer}>
@@ -35,4 +35,4 @@ const styles = StyleSheet.create({
 
 const { commentsContainer, commentContainer, commentText } = styles;
 
-export default MainPageSubDescription;
+export default TokyoComments;

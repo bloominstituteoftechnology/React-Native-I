@@ -1,11 +1,18 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Image } from 'react-native';
 
 export default class App extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <View><Image source= {require('./design/menu-alt-256.png')} style={styles.image} /></View>
+        <View style={styles.firstImageAndSearchBar}>
+         <View style={styles.imageContainer}>
+            <Image source={require('./design/menu-alt-256.png')} style={styles.image} resizeMethod={'auto'} />
+         </View>
+         <View style={styles.searchBar}>
+            <Text>search                                                                                   </Text>
+         </View>
+        </View>
       </View>
     );
   }
@@ -13,12 +20,27 @@ export default class App extends React.Component {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
+    flex: 0,
     backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+     
   },
   image:{
+    width: 30,
+    height: 30
+  },
+  imageContainer: {
+    flex: 0,
+    backgroundColor: 'white',
     alignItems: 'flex-start'
+  },
+  searchBar: {
+    borderColor: 'black',
+    borderRadius: 30,
+    borderStyle: 'solid',
+    borderWidth: 2
+  },
+  firstImageAndSearchBar: {
+    flex: 0,
+    flexDirection: 'row'
   }
 });

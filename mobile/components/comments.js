@@ -3,14 +3,13 @@ import { View, Text, Stylesheet } from 'react-native';
 
 const Comments = () => {
     return (
-        <View style={styles.buttonRow}>
-        <View style={styles.commentContainer}>
-        <Text style={styles.comment}>Some User: A comment on the picture</Text>
-        <Text style={styles.comment}>Another User: A comment on the picture</Text>
-        <Text style={styles.comment}>And Another User: A comment on the picture</Text>
-      </View>
-    </View>
-  );
+        
+        <View style={commentWrapperr}>
+            <Text style={comment}>Some User: A comment on the picture</Text>
+            <Text style={comment}>Another User: A comment on the picture</Text>
+            <Text style={comment}>And Another User: A comment on the picture</Text>
+        </View>
+     );
  }
 
 
@@ -25,5 +24,5 @@ const styles = StyleSheet.create({
     },
 });
 
-const {  } = styles;
+const { commentsWrapper, comment } = styles;
 export default Comments; 
